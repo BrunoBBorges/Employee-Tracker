@@ -3,15 +3,15 @@ CREATE DATABASE employees_db;
 
 USE employees_db;
 
-CREATE TABLE empDepartments (
+CREATE TABLE Departments (
     id INT NOT NULL AUTO_INCREMENT, 
-    name VARCHAR (40),
+    name VARCHAR (30),
     PRIMARY KEY (id)
 );
 
-CREATE TABLE empRole (
+CREATE TABLE Roles (
     id INT NOT NULL AUTO_INCREMENT,
-    title VARCHAR (40),
+    title VARCHAR (30),
     salary INT,
     deparmentid INT,
     PRIMARY KEY (id)
@@ -19,8 +19,8 @@ CREATE TABLE empRole (
 
 CREATE TABLE employees (
     id INT NOT NULL AUTO_INCREMENT,
-    firstName VARCHAR(40),
-    lastName VARCHAR(40), 
+    firstName VARCHAR(30),
+    lastName VARCHAR(30), 
     roleId INT,
     managerId INT, 
     PRIMARY KEY (id)      
